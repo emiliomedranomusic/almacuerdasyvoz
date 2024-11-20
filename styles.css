@@ -1,0 +1,48 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background-image: url('bgconcert.png'); /* Aquí pon la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor para los botones */
+.container {
+    text-align: center;
+}
+
+/* Estilos de los botones */
+.btn {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Cambia el color al pasar el cursor */
+}
+
+/* Añadir responsividad */
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+        padding: 12px 0;
+    }
+}
